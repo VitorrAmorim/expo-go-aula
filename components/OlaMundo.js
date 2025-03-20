@@ -1,14 +1,15 @@
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
-import OlaMundo from "./components/OlaMundo";
 
-class App extends React.Component {
+export default class OlaMundo extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <OlaMundo />
+                <Text style={styles.texto}>Olá Mundo!</Text>
+                <Text style={styles.texto}>Bem vindos ao mundo do desenvolvimento mobile</Text>
             </View>
-        );
+
+        )
     }
 }
 
@@ -19,6 +20,8 @@ const styles = StyleSheet.create({
         alignItems: "center",
         backgroundColours: "#fff",
     },
-});
+    texto: {
+        color: "#ccc",
 
-export default App;
+    }
+})
